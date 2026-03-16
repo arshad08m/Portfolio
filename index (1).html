@@ -271,9 +271,9 @@ footer{padding:2rem 3rem;border-top:1px solid var(--border);display:flex;justify
   .chat-messages{height:280px;padding:1rem;}
   .msg{max-width:85%;}
   .chat-suggestions{flex-direction:column;}
-  .suggestion-btn{width:100%;}
+  .suggestion-btn{width:100%;min-height:40px;}
   
-  /* Contact form */
+  /* Contact form - prevent iOS zoom */
   .contact-form{gap:0.75rem;}
   .form-input,.form-textarea{font-size:16px;padding:0.8rem;}
   .form-textarea{min-height:100px;}
@@ -306,6 +306,9 @@ footer{padding:2rem 3rem;border-top:1px solid var(--border);display:flex;justify
   .stat{text-align:left;}
   
   .form-submit{width:100%;}
+  /* Prevent iOS auto-zoom on input focus */
+  .form-input,.form-textarea{font-size:16px;}
+  
   .chat-container{max-width:100%;}
   .msg{max-width:90%;}
   
